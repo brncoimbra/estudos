@@ -68,7 +68,7 @@ a.link:hover {
     background-color: #58b97a;
 }
 
-main {
+main.corpo {
     background-color: white;
     min-width: 260px;
     max-width: 800px;
