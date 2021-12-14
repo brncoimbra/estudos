@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Courgette', cursive;
+}
+
+header {
+    height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte1);
+}
+
+header > h1 {
+    padding: 50px 0px 10px 0px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+a.link {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: var(--fonte1);
+}
+
+p.texto-principal {
+    padding: 60px 0px 10px 30px;
+    font-family: var(--fonte3);
+    font-weight: 500;
+    font-size: 2em;
+    text-align: justify;
+}
