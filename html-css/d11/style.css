@@ -36,10 +36,65 @@ a.link {
     font-family: var(--fonte1);
 }
 
+main > section {
+    width:100%;
+    height: 600px;
+}
+
 p.texto-principal {
-    padding: 60px 0px 10px 30px;
+    padding: 60px 0px 10px 55px;
     font-family: var(--fonte3);
-    font-weight: 500;
-    font-size: 2em;
+    font-weight: bold;
+    font-size: 1.5em;
     text-align: justify;
+}
+
+p.texto-imagem {
+    color: white;
+    padding: 30px 0px 30px 30px;
+    font-family: var(--fonte3);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: justify;
+    width: 14em;
+    background-color: rgba(0, 0, 0, 0.473);
+    position: absolute;
+    top: 3em;
+    left: 1.4em;
+}
+
+section.container {
+    position: relative;
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 8px 10px 22px rgba(0, 0, 0, 0.596);
+}
+
+section.dois-textos {
+    width:100%;
+    height: 1000px;
+}
+
+section.container2 {
+    position: relative;
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 8px 10px 22px rgba(0, 0, 0, 0.596);
+}
+
+footer {
+    background-color: black;
+    padding: 10px 0px 10px 0px;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
 }
