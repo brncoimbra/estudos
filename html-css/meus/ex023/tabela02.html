@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(128, 118, 118);
+        }   
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: red;
+            color:black;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: black;
+            color: white;
+        }
+        .tamanho-numero {
+            width: 80px;
+        }
+
+        .estados {
+            text-align: center;
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+      <!--
+          Anatomia para tabelas grandes
+          TABLE
+            CAPTION (legenda da tabela)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+        -->
+
+        <table>
+            <caption> População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Posição</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tamanho-numero">1</td>
+                    <td class="estados">São Paulo</td>
+                    <td class="numero">45 919 049</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">2</td>
+                    <td class="estados">Minas Gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">3</td>
+                    <td class="estados">Rio de Janeiro</td>
+                    <td class="numero">17 264 943</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">4</td>
+                    <td class="estados">Bahia</td>
+                    <td class="numero">14 985 284</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">5</td>
+                    <td class="estados">Paraná</td>
+                    <td class="numero">11 597 484</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">6</td>
+                    <td class="estados">Rio Grande do Sul</td>
+                    <td class="numero">11 466 630</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">7</td>
+                    <td class="estados">Pernambuco</td>	
+                    <td class="numero">9 674 793</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">8</td>
+                    <td class="estados">Ceará</td>
+                    <td class="numero">9 240 580</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">9</td>
+                    <td class="estados">Pará Pará</td>
+                    <td class="numero">8 777 124</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">10</td> 
+                    <td class="estados">Santa Catarina</td>
+                    <td class="numero">7 338 473</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">11</td>
+                    <td class="estados">Goiás</td>
+                    <td class="numero">7 206 589</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">12</td> 
+                    <td class="estados">Maranhão</td>
+                    <td class="numero">7 153 262</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">13</td> 
+                    <td class="estados">Amazonas</td>
+                    <td class="numero">4 269 995</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">14</td>
+                    <td class="estados">Espírito Santo</td>
+                    <td class="numero">4 108 508</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">15</td> 
+                    <td class="estados">Paraíba</td>	
+                    <td class="numero">4 059 905</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">16</td>
+                    <td class="estados">Mato Grosso	</td>
+                    <td class="numero">3 567 234</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">17</td>
+                    <td class="estados">Rio Grande do Norte</td>
+                    <td class="numero">3 560 903</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">18</td>
+                    <td class="estados">Alagoas</td>
+                    <td class="numero">3 365 351</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">19</td> 
+                    <td class="estados">Piauí</td>	
+                    <td class="numero">3 289 290</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">20</td>	 
+                    <td class="estados">Distrito Federal</td>	
+                    <td class="numero">3 094 325</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">21</td>	 
+                    <td class="estados">Mato Grosso do Sul</td>
+                    <td class="numero">2 839 188</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">22</td>	 
+                    <td class="estados">Sergipe	</td>
+                    <td class="numero">2 338 474</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">23</td>	 
+                    <td class="estados">Rondônia</td>
+                    <td class="numero">1 815 278</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">24</td>	 
+                    <td class="estados">Tocantins</td>
+                    <td class="numero">1 607 363</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">25</td> 
+                    <td class="estados">Acre</td>	
+                    <td class="numero">906 876</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">26</td>	 
+                    <td class="estados">Amapá</td>	
+                    <td class="numero">877 613</td>
+                </tr>
+                <tr>
+                    <td class="tamanho-numero">27</td>	 
+                    <td class="estados">Roraima</td>
+                    <td class="numero">652 713</td>
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="numero" colspan="2"><strong>210.147.125</strong>
+                    </td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+</body>
+</html>
