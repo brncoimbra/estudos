@@ -15,6 +15,7 @@ import NumeroAleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import Input from "./components/formulario/Input";
 
 /* cores cards
   azul: #00C8F8
@@ -30,6 +31,10 @@ export default () => {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+        <Card titulo="#11 Componente controlado" color="#00C8F8">
+          <Input></Input>
+        </Card>
+
         <Card titulo="#10 Comunicação indireta" color="#9900FA">
           <IndiretaPai></IndiretaPai>
         </Card>
@@ -61,7 +66,7 @@ export default () => {
           </Familia>
         </Card>
 
-        <Card titulo="#04 Exemplo de card" color="#EBC618">
+        <Card titulo="#04 Exemplo de card e números aleatórios" color="#EBC618">
           <NumeroAleatorio min={1} max={60} />
         </Card>
 
