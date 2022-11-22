@@ -16,6 +16,8 @@ import Card from "./components/layout/Card";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
+import Mega from "./components/mega/Mega";
 
 /* cores cards
   azul: #00C8F8
@@ -31,6 +33,14 @@ export default () => {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+        <Card titulo="#13 Mega" color="#E94C6F">
+          <Mega></Mega>
+        </Card>
+
+        <Card titulo="#12 Contador" color="#38B71A">
+          <Contador numeroInicial={0}></Contador>
+        </Card>
+
         <Card titulo="#11 Componente controlado" color="#00C8F8">
           <Input></Input>
         </Card>
