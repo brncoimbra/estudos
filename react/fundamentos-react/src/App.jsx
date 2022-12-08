@@ -31,7 +31,7 @@ export default () => {
   return (
     <div className="App">
       <h1>Fundamentos React</h1>
-
+      
       <div className="Cards">
         <Card titulo="#13 Mega" color="#E94C6F">
           <Mega></Mega>
