@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="contact-me">
+    <h1>Contate-me</h1>
+    <p>Deixe sua mensagem abaixo, ficarei feliz em receber seu contato!</p>
+  </div>
+
+  <form>
+    <div class="inputField">
+      <label for="name-form">Nome completo</label>
+      <input name="name" id="name-form" class="" placeholder="Digite seu nome...">
+      <p class="error-name error error-hidden"></p>
+    </div>
+
+    <div class="inputField">
+      <label for="email-form">E-mail:</label>
+      <input name="email" id="email-form" class="" placeholder="Digite seu melhor e-mail...">
+      <p class="error error-hidden">Coloque um e-mail valido.</p>
+    </div>
+
+    <div class="inputField">
+      <label for="cpf-form">CPF:</label>
+      <input name="cpf" id="cpf-form" class="" placeholder="Digite seu CPF...">
+      <p class="error error-hidden">Coloque um CPF valido.</p>
+    </div>
+
+    <hr />
+
+    <button>Submit</button>
+  </form>
+
+  <div class="thanks hidden">
+    <h2>Obrigado pelo seu contato!</h2>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
