@@ -20,6 +20,11 @@ export default function Home() {
         destino='/cliente/sp-2/alex'
         cor='blue'
       />
+      <Navegador
+        texto='Componente com Estado'
+        destino='/estado'
+        cor='pink'
+      />
     </div>
   );
 }
