@@ -25,6 +25,11 @@ export default function Home() {
         destino='/estado'
         cor='pink'
       />
+      <Navegador
+        texto='Integração com API #01'
+        destino='/integracao'
+        cor='yellow'
+      />
     </div>
   );
 }
