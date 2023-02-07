@@ -1,13 +1,19 @@
-import Link from "next/link";
+import Navegador from "@/components/Navegador";
 
 export default function Home() {
   return (
-    <div>
-      <div>
-        <Link href="/estiloso">
-          Estiloso
-        </Link>
-      </div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexWrap: "wrap",
+        height: "100vh",
+      }}
+    >
+      <Navegador texto='Estiloso' destino='/estiloso' cor='#9400d3' />
+      <Navegador texto='Exemplo' destino='/exemplo' />
+      <Navegador texto='JSX' destino='/jsx' cor='crimson' />
     </div>
   );
 }
