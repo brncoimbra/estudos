@@ -26,6 +26,11 @@ export default function Home() {
         destino='/integracao'
         cor='#42a9a9'
       />
+      <Navegador
+        texto='Conteúdo Estático'
+        destino='/estatico'
+        cor='#fa054a'
+      />
     </div>
   );
 }
