@@ -5,7 +5,7 @@ function getColor(props) {
   if (props.green) return "Green";
   if (props.blue) return "Blue";
   if (props.purple) return "Purple";
-  return ""
+  return "";
 }
 
 export default (props) => {
