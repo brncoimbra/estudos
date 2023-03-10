@@ -1,7 +1,7 @@
 import "./Intervalo.css";
 import Card from "./Card";
 
-export default (props) => {
+const Media = (props) => {
   return (
     <Card title='Média dos números' green>
       <div className='Intervalo'>
@@ -13,3 +13,5 @@ export default (props) => {
     </Card>
   );
 };
+
+export default Media;
