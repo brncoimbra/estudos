@@ -9,6 +9,7 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 const routes: Routes = [
   { path: '', component: FirstComponentComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'parentdata', component: ParentDataComponent },
   { path: 'pipes', component: PipesComponent },
   { path: 'twoway', component: TwoWayBindingComponent },
+  { path: 'list/:id', component: ItemDetailComponent },
 ];
 
 @NgModule({
